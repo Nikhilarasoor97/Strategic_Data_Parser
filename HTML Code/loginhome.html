@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+
+  <link href="loginhome.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+
+
+
+  <div class="login">
+    <div class="login-header">
+      <div class="a">
+        <h2 style="color: chartreuse;font-variant: annotation;font-size: 30px">Welcome to Strategic Data Parsing</h2>
+
+
+      </div>
+      <h1>Login</h1>
+    </div>
+    <form name="myform" onsubmit="return valid()">
+      <div class="login-form">
+
+        <h3>Username:</h3>
+        <input type="email" placeholder="Username" name="name" required><br>
+        <h3>Password:</h3>
+        <input type="password" placeholder="Password" name="pass" required>
+        <br>
+        <input type="radio" id='h' name="Logintype" value="User" required>User<br>
+        <input type="radio" id='h' name="Logintype" value="super user">Super User<br>
+        <input type="radio" id='h' name="Logintype" value="admin">Admin<br><br>
+        <input type="submit" value="submit" name="login" onclick="return valid()" class="login-button">
+        <br>
+        <a class="sign-up" href="registrationhome.html">Sign Up!</a>
+        <br>
+        <a class="no-access" href="forgetpasswordhome.html">Can't access your account?</a>
+      </div>
+    </form>
+  </div>
+  <div class="error-page">
+    <div class="try-again">We are here to help you:contact us</div>
+  </div>
+  <script>
+    function valid() {
+      var name = document.myform.value("name");
+      var pass = document.myform.value("pass");
+      if (name === "" && name === null) {
+        alert("name is required");
+        return False;
+      }else
+      {
+        <a href="registrationhome.html"></a>
+      }
+    }</script>
+
+
+
+
+</body>
+
+</html>
